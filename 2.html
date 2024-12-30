@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        .day{
+            background-color: rgb(117, 172, 220);
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .lab {
+            background-color: rgb(207, 109, 109);
+        }
+
+        .elective {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Time Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>9:00-10:00</th>
+                <th>10:00-11:00</th>
+                <th>11:00-12:00</th>
+                <th>12:00-1:00</th>
+                <th>Lunch Break</th>
+                <th>2:00-3:00</th>
+                <th>3:00-4:00</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="day">Monday</td>
+                <td class="lab">WEB LAB</td>
+                <td>TC</td>
+                <td>AI</td>
+                <td>CN</td>
+
+                <td rowspan="5">Break</td>
+                <td>CN</td>
+                <td class="elective">AI</td>
+              
+            </tr>
+            <tr>
+                <td class="day">Tuesday</td>
+       
+                <td class="elective">AI</td>
+                <td>PE</td>
+<td class="lab">WEB LAB</td>
+                <td>CN</td>
+                <td>TC</td>
+                <td>CN</td>
+            </tr>
+            <tr>
+                <td class="day">Wednesday</td>
+                    <td>CN</td>
+                <td>TC</td>
+
+                <td>CN</td>
+                <td class="lab">WEB LAB</td>
+                <td class="elective">AI</td>
+    <td class="lab">WEB LAB</td>
+            </tr>
+            <tr>
+                <td class="day">Thursday</td>
+       
+                <td>ES</td>
+
+                <td>CN</td>
+                <td class="elective">AI</td>
+                <td>TC</td>
+                <td class="lab">WEB LAB</td>
+                <td>CN</td>
+            </tr>
+            <tr>
+                <td class="day">Friday</td>
+                <td class="lab">WEB LAB</td>
+                <td>TC</td>
+                <td>CN</td>
+                <td class="lab">WEB LAB</td>
+                <td>CN</td>
+                <td>AI</td>
+              
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="8">End of timetable</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

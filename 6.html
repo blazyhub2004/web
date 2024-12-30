@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            height: 45vh;
+            background-color: wheat;
+            width: 40vh;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+            height: 50px;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+
+        button,
+        select,
+        input,
+        #result {
+            margin: 10px;
+            height: 30px;
+            width: 300px;
+            border-radius: 10px;
+            border: solid gray thin;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <h1>Simple Calculator</h1>
+            <input type="number" placeholder="Enter First Number" id="num1" required><br>
+            <input type="number" placeholder="Enter First Number" id="num2" required><br>
+            <select id="operation">
+                <option value="+">Sum</option>
+                <option value="-">Minus</option>
+                <option value="*">Multiply</option>
+                <option value="/">Divide</option>
+                <option value="%">Remainder</option>
+                <option value="**">Power</option>
+            </select><br>
+            <button>Calculate</button><br>
+        </form>
+    </div>
+    <script>
+        const form = document.querySelector('form');
+        const container = document.querySelector('.container')
+        form.addEventListener('submit', function (e) {
+            e.preventDefault()
+            const num1 = document.querySelector('#num1').value;
+            const num2 = document.querySelector('#num2').value;
+            const operation = document.querySelector('#operation').value
+            const statement = `${num1} ${operation} ${num2}`
+            const result = eval(statement);
+            const resultdiv = document.createElement('button')
+            resultdiv.innerHTML = result;
+            resultdiv.classList.add('result')
+            form.appendChild(resultdiv)
+        })
+    </script>
+</body>
+</html>
