@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    gap: 50px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+
+#container{
+ height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#midd{
+    position: relative;
+    top: 20px;
+    padding: 20px;
+    border: 2px solid black;
+}
+input{
+    display: inline;
+    width: 500px;
+
+}
+.mine{
+    width: auto;
+}
+#gap{
+    display: flex;
+    gap: 30px;
+}
+#reg{
+    width: 235px;
+    color: white;
+    border: none;
+    height: 30px;
+}
+.cl{
+    background-color: rgb(53, 128, 0);
+}
+.clr{
+    background-color: red;
+}
+select{
+    width: 500px;
+}
+</style>
+</head>
+<body>
+    <div id="container">
+       
+        <div id="midd">
+            <h1> Registration Form </h1>
+        </br>
+            <p>First Name :</p>
+            <input id="one"  placeholder="">
+</br>
+</br>
+
+            <p>Last Name :</p>
+            <input placeholder="">
+</br>
+</br>
+            <p>Email :</p>
+            <input type="email" placeholder="">
+        </br>
+    </br>
+            <p>Password :</p>
+            <input type="password"   placeholder="">
+        </br>
+    </br>
+            <p>Date of Birth :</p>
+            <input  type="date" placeholder="">
+        </br>
+    </br>
+            <p>Gender :</p>
+          <label for="1">
+            <input class="mine" type="radio" id="1" name="Male" placeholder="">Male  
+        </label>
+        <label for="2">
+            <input  class="mine" type="radio" id="2"  name="Male" placeholder="">Female 
+    </label>
+</br>
+</br>
+       <p>Country :</p>
+       <select>
+        <option >India</option>
+        <option >USA</option>
+        <option>Russia</option>
+        <option>Pakisthan</option>
+        <option>UK</option>
+        <option>Australia</option>
+    </select>
+</br>
+</br>
+     <p>Bio :</p>
+     <input id="rsc"  placeholder="" >
+     <div id="sec">
+    </br>
+</br>
+<div id="gap">
+     <button class="cl"  id="reg">Register</button>
+     <button class="clr"   id="reg">Reset</button>
+    </div>
+    </div>
+        </div>
+    </div>
+</body>
+</html>
